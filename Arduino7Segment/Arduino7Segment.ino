@@ -1,4 +1,12 @@
 
+// Project "Arduino7Segment"
+// Sketch to write the numbers 0..9 on a 7 segment display
+// https://github.com/Exception418/Arduino-7-Segment
+// License: CCO-1.0
+
+
+// Declarations
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // Define pin numbers
 int pinA = 2;   // goes to 7-Segment Pin 11
@@ -15,13 +23,13 @@ int D2 = 10;    // goes to 7-Segment Pin 9
 int D3 = 11;    // goes to 7-Segment Pin 8
 int D4 = 12;    // goes to 7-Segment Pin 6
 
-
 // Delay
 int myDelay = 400;
 
 
+// Setup
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// put your setup code here, to run once:
 void setup() 
 {
   // Setup pinA .. pinG as output
@@ -39,8 +47,9 @@ void setup()
 }
 
 
+// Loop
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// put your main code here, to run repeatedly:
 void loop() 
 {
   Write0();
